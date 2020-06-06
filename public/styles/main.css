@@ -1,0 +1,42 @@
+:root{
+    --title-color: #322153;
+    --p-c: #34cb79;
+}
+/* o * referencia a todos*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family:'Roboto', sans-serif;
+}
+/* Box Model*/
+/* display in line: o escrito só ocupa o seu tamanho na página/display block: o escrito ocupa a linha toda*/
+/* toda caixa tem
+largura, altura, espaçamentos, preeenchimentos, bordas,cor
+fundo, maneira que é vista pelo html (display)
+posicionamento e alinhamento
+*/
+body{
+    background: #f0f0f5; /* dois primeiros sao R dois segundos G e dois ultimos B, fazendo assim rgb. Usa f e um numero de cor */
+    -webkit-font-smoothing: antialiased;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+
+
+/*.red{
+    background-color: red;
+}
+*/

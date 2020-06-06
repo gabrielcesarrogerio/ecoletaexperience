@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt_br"> 
+    <!--
+        Hyper Text
+        hiper texto= links nas paginas que te leva a outro documento
+
+        Markup
+        jeito de marcar textos
+
+        Language
+        linguagem de marcação de texto
+
+
+
+    -->
+<head>
+    <meta charset="UTF-8"> <!--isso diz que aceita caracteres especiais-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--essa tag faz com que o site se adeque a diferente tamanhos-->
+    {% block title %}
+    <title>Ecoleta</title>
+    {% endblock title %}
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300;1,700&family=Ubuntu:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    {% block styles %}
+    {% endblock styles %}
+    <link rel="stylesheet" href="/styles/responsive.css">
+</head>
+<body>
+    <div id="{{ pageId }}">
+        {% block content %}
+        {% endblock content %}
+    </div>
+
+    {% block modal %}
+    {% endblock modal %}
+
+    {% block scripts %}
+    {% endblock scripts %}
+
+    
+    
+    
+</html>
